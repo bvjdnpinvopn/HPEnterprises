@@ -424,89 +424,6 @@
     *{ transition:none !important; animation:none !important; }
     html{ scroll-behavior:auto; }
   }
-
-/* --- Premium Expansion Layer --- */
-.impact-grid,.insight-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:22px;
-}
-.impact-card,.insight-card{
-background:var(--panel);
-border:1px solid var(--line);
-border-radius:14px;
-padding:28px;
-}
-.impact-card h3,.insight-card h3{
-font-family:'Big Shoulders Display',sans-serif;
-font-size:1.5rem;
-text-transform:uppercase;
-margin-bottom:12px;
-}
-.metric-bar{
-height:10px;
-background:var(--panel-light);
-border-radius:999px;
-overflow:hidden;
-margin-top:12px;
-}
-.metric-fill{
-height:100%;
-background:linear-gradient(90deg,var(--amber),var(--cyan));
-}
-.marquee{
-overflow:hidden;
-border-top:1px solid var(--line);
-border-bottom:1px solid var(--line);
-padding:18px 0;
-white-space:nowrap;
-}
-.marquee-track{
-display:inline-block;
-animation:scroll 20s linear infinite;
-font-family:'JetBrains Mono',monospace;
-color:var(--slate);
-}
-@keyframes scroll{
-from{transform:translateX(0)}
-to{transform:translateX(-50%)}
-}
-@media(max-width:920px){
-.impact-grid,.insight-grid{grid-template-columns:1fr;}
-}
-
-
-/* Visual Upgrade */
-.hero::after{
-content:'';
-position:absolute;
-right:-120px;
-top:40px;
-width:420px;
-height:420px;
-border-radius:50%;
-background:radial-gradient(circle, rgba(47,209,194,.12), transparent 70%);
-pointer-events:none;
-}
-section{padding:110px 0;}
-.cap-card,.quote-card,.impact-card,.insight-card,.gauge-wrap{
-box-shadow:0 20px 60px rgba(0,0,0,.18);
-}
-.section-head{
-margin-left:auto;
-margin-right:auto;
-text-align:center;
-}
-.cap-grid,.quote-grid,.impact-grid,.insight-grid{
-align-items:stretch;
-}
-.cap-card p,.quote-card p,.impact-card p,.insight-card p{
-line-height:1.7;
-}
-.dash{
-margin-top:20px;
-}
-
 </style>
 </head>
 <body>
@@ -521,8 +438,6 @@ margin-top:20px;
       <a href="#capabilities">Capabilities</a>
       <a href="#method">Method</a>
       <a href="#results">Results</a>
-      <a href="#insights">Insights</a>
-      <a href="#impact">Impact</a>
       <a href="#contact">Contact</a>
     </div>
     <div class="nav-cta">
@@ -538,7 +453,7 @@ margin-top:20px;
     <div>
       <div class="eyebrow">Enterprise performance tuning</div>
       <h1>Redline your <span class="accent">enterprise.</span></h1>
-      <p class="lede">We help enterprises scale faster by removing friction, accelerating growth, and improving execution.</p>
+      <p class="lede">HP Enterprising rebuilds how large organizations produce, grow, and get noticed — finding the drag in your operation and tuning every system to run at full output.</p>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary btn-lg">Book a diagnostic</a>
         <a href="#method" class="btn btn-ghost btn-lg">See the method</a>
@@ -590,7 +505,7 @@ margin-top:20px;
     <div class="section-head reveal">
       <div class="eyebrow">What we tune</div>
       <h2>Three systems, one output.</h2>
-      <p>Three core systems. One measurable outcome.</p>
+      <p>Productivity, growth, and visibility aren't separate problems. They're three gauges on the same dashboard — and they move together.</p>
     </div>
     <div class="cap-grid">
       <div class="cap-card reveal">
@@ -635,7 +550,7 @@ margin-top:20px;
     <div class="section-head reveal">
       <div class="eyebrow">How a tune-up runs</div>
       <h2>Three weeks. Three gears.</h2>
-      <p>A proven process designed for speed and clarity.</p>
+      <p>Every engagement runs the same sequence — instrumented, not improvised — so you always know what's happening and why.</p>
     </div>
     <div class="method-grid">
       <div class="step reveal">
@@ -710,63 +625,6 @@ margin-top:20px;
   </div>
 </section>
 
-
-<section class="marquee">
-  <div class="marquee-track">
-    STRATEGY • OPERATIONS • AI ENABLEMENT • PRODUCTIVITY • EXPANSION • MARKET DOMINANCE • EXECUTION EXCELLENCE • STRATEGY • OPERATIONS • AI ENABLEMENT • PRODUCTIVITY • EXPANSION •
-  </div>
-</section>
-
-<section id="insights">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Executive intelligence</div>
-      <h2>See the enterprise before you change it.</h2>
-      <p>Clear visibility. Faster decisions. Better outcomes.</p>
-    </div>
-    <div class="insight-grid">
-      <div class="insight-card reveal">
-        <h3>Growth Mapping</h3>
-        <p>Identify bottlenecks, revenue leaks, and expansion opportunities across the entire organization.</p>
-      </div>
-      <div class="insight-card reveal">
-        <h3>AI Integration</h3>
-        <p>Deploy practical AI workflows that reduce operational drag and increase team capacity.</p>
-      </div>
-      <div class="insight-card reveal">
-        <h3>Executive Dashboards</h3>
-        <p>Real-time KPI visibility for leaders who need fast, confident decision making.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="impact">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div class="eyebrow">Transformation scorecard</div>
-      <h2>Measured impact across the enterprise.</h2>
-    </div>
-    <div class="impact-grid">
-      <div class="impact-card reveal">
-        <h3>Operational Efficiency</h3>
-        <p>92/100 performance index</p>
-        <div class="metric-bar"><div class="metric-fill" style="width:92%"></div></div>
-      </div>
-      <div class="impact-card reveal">
-        <h3>Revenue Velocity</h3>
-        <p>87/100 acceleration score</p>
-        <div class="metric-bar"><div class="metric-fill" style="width:87%"></div></div>
-      </div>
-      <div class="impact-card reveal">
-        <h3>Market Visibility</h3>
-        <p>95/100 awareness score</p>
-        <div class="metric-bar"><div class="metric-fill" style="width:95%"></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="contact">
   <div class="wrap">
     <div class="cta-panel reveal">
@@ -782,17 +640,7 @@ margin-top:20px;
   </div>
 </section>
 
-
-<section>
-<div class="wrap">
-<div style="height:220px;border-radius:20px;border:1px solid rgba(255,255,255,.08);background:
-radial-gradient(circle at 20% 30%, rgba(255,122,41,.18), transparent 35%),
-radial-gradient(circle at 80% 70%, rgba(47,209,194,.18), transparent 35%),
-linear-gradient(180deg,#1B212B,#12161D);"></div>
-</div>
-</section>
 <footer>
-
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
@@ -896,4 +744,4 @@ linear-gradient(180deg,#1B212B,#12161D);"></div>
 </script>
 
 </body>
-</html>   
+</html>
